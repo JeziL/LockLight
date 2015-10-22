@@ -1,6 +1,4 @@
 #import <Preferences/Preferences.h>
-#include <spawn.h>
-#include <signal.h>
 
 #define donateURL @"http://ezidev.tumblr.com/post/131626791958/donation"
 #define myTwitterWeb @"https://twitter.com/EZIdev"
