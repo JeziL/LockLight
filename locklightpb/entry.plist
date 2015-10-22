@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = LockLightPB;
+	cell = PSLinkCell;
+	detail = LockLightPBListController;
+	icon = LockLightPB.png;
+	isController = 1;
+	label = LockLight;
+    };
+}

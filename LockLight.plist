@@ -1,0 +1,9 @@
+{
+	Filter = {
+		Bundles = (
+			"com.apple.springboard",
+			"com.apple.backboardd",
+			"com.apple.backboard.client"
+		);
+	};
+}
