@@ -17,4 +17,4 @@ Configure options from Settings.
 
 ## License
 
-- LyricForMusic project is licensed under the [GNU General Public License v2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
+- LockLight project is licensed under the [GNU General Public License v2.0](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
