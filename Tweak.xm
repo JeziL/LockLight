@@ -31,9 +31,9 @@ static void loadPrefs() {
 	NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.ezi.locklight.plist"];
     if(prefs)
     {
-        _lEnabled = [prefs objectForKey:@"LEnabled"] ? [[prefs objectForKey:@"LEnabled"] boolValue] : YES;
-        _pdEnabled = [prefs objectForKey:@"PDEnabled"] ? [[prefs objectForKey:@"PDEnabled"] boolValue] : YES;
-        _lockEnabled = [prefs objectForKey:@"LockEnabled"] ? [[prefs objectForKey:@"LockEnabled"] boolValue] : YES;
+        _lEnabled = [prefs objectForKey:@"LEnabled"] ? [[prefs objectForKey:@"LEnabled"] boolValue] : NO;
+        _pdEnabled = [prefs objectForKey:@"PDEnabled"] ? [[prefs objectForKey:@"PDEnabled"] boolValue] : NO;
+        _lockEnabled = [prefs objectForKey:@"LockEnabled"] ? [[prefs objectForKey:@"LockEnabled"] boolValue] : NO;
     }
     [prefs release];
 }
