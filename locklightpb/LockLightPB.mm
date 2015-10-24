@@ -2,13 +2,14 @@
 
 #define donateURL @"http://ezidev.tumblr.com/post/131626791958/donation"
 #define myTwitterWeb @"https://twitter.com/EZIdev"
-#define myTwitterApp @"twitter:///user?screen_name=EZIdev"
+#define myTwitterApp @"twitter://user?screen_name=EZIdev"
 
 @interface LockLightPBListController: PSListController {
 }
 @end
 
 @implementation LockLightPBListController
+
 - (id)specifiers {
 	if(_specifiers == nil) {
 		_specifiers = [[self loadSpecifiersFromPlistName:@"LockLightPB" target:self] retain];

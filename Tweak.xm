@@ -5,6 +5,7 @@
 BOOL _lEnabled;
 BOOL _pdEnabled;
 BOOL _lockEnabled;
+BOOL _lockPDEnabled;
 
 extern "C"{
     typedef uint32_t IOHIDEventOptionBits;
@@ -34,6 +35,7 @@ static void loadPrefs() {
         _lEnabled = [prefs objectForKey:@"LEnabled"] ? [[prefs objectForKey:@"LEnabled"] boolValue] : NO;
         _pdEnabled = [prefs objectForKey:@"PDEnabled"] ? [[prefs objectForKey:@"PDEnabled"] boolValue] : NO;
         _lockEnabled = [prefs objectForKey:@"LockEnabled"] ? [[prefs objectForKey:@"LockEnabled"] boolValue] : NO;
+        _lockPDEnabled = [prefs objectForKey:@"LockPDEnabled"] ? [[prefs objectForKey:@"LockPDEnabled"] boolValue] : NO;
     }
     [prefs release];
 }
@@ -48,6 +50,23 @@ static void lockDevice() {
     [springboard _lockButtonUp:event fromSource:1];
     CFRelease(event);
 }
+
+%group pullDown2Lock
+	
+	%hook SPUISearchViewController
+
+		- (void)didFinishPresenting:(BOOL)arg1 {
+			if (arg1 && [self _isPullDownSpotlight]/*self.presentsFromEdge == 1*/) {
+				lockDevice();
+			}
+			else {
+				%orig;
+			}
+		}
+
+	%end
+
+%end
 
 %group leftSP2Lock
 
@@ -101,5 +120,8 @@ static void lockDevice() {
 	}
 	if (!_pdEnabled) {
 		%init(killPullDownSP);
+	}
+	else if (_lockPDEnabled) {
+		%init(pullDown2Lock);
 	}
 }
