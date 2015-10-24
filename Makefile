@@ -1,4 +1,3 @@
-THEOS_DEVICE_IP = 192.168.2.3
 ARCHS = armv7 arm64
 TARGET = iphone:9.0:9.0
 
