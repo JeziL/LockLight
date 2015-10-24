@@ -38,7 +38,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>This will work only if Spotlight page is enabled.</string>
+			<string>These will work only if Spotlight Page (or Pull-down Spotlight) is enabled.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
