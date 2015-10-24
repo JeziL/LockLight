@@ -4,16 +4,15 @@
 
 Compatible with iOS 9
 
-- Lock your device by swiping to Spotlight page.
-- Turn on/off Spotlight (page and pull-down view, separately).
+- Turn on/off Spotlight or lock your device by it (page and pull-down view, separately).
 
 Configure options from Settings.
 
-![](http://i1028.photobucket.com/albums/y349/JLTHU/Github/lle_zpsysxipzex.png)
+![](http://i1028.photobucket.com/albums/y349/JLTHU/Github/ll2_zpsbkxrxjud.png)
 
 ## In this version
 
-- Change default values.
+- Now you can lock your device by pull down to spotlight view.
 
 ## License
 
