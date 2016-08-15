@@ -1,7 +1,7 @@
-ARCHS = armv7 arm64
-TARGET = iphone:9.0:9.0
+THEOS_DEVICE_IP = localhost -p 2222
+TARGET = iphone:9.3:9.0
 
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = LockLight
 LockLight_FILES = Tweak.xm
@@ -17,7 +17,6 @@ p:
 	make package
 
 after-install::
-	install.exec "cat /dev/null > /var/log/syslog"
 	install.exec "killall -9 SpringBoard"
 SUBPROJECTS += locklightpb
 include $(THEOS_MAKE_PATH)/aggregate.mk

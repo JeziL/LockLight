@@ -1,4 +1,5 @@
-#import <Preferences/Preferences.h>
+#import <Preferences/PSListController.h>
+//#import <Preferences/Preferences.h>
 
 #define donateURL @"http://ezidev.tumblr.com/post/131626791958/donation"
 #define myTwitterWeb @"https://twitter.com/EZIdev"

@@ -1,4 +1,4 @@
-include theos/makefiles/common.mk
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = LockLightPB
 LockLightPB_FILES = LockLightPB.mm
