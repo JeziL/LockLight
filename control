@@ -1,7 +1,7 @@
 Package: com.ezi.locklight
 Name: LockLight
 Depends: mobilesubstrate, firmware (>= 9.0)
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Description: Switch on/off Spotlight and lock your device by it!
 Maintainer: EZI
