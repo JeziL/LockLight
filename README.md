@@ -8,11 +8,17 @@ Compatible with iOS 9
 
 Configure options from Settings.
 
-![](http://i1028.photobucket.com/albums/y349/JLTHU/Github/ll2_zpsbkxrxjud.png)
+![](http://7xprcz.com1.z0.glb.clouddn.com/20160815_22:17:05_0.jpg)
 
 ## In this version
 
-- Now you can lock your device by pull down to spotlight view.
+- v1.0.2
+
+	- Support iOS 9.3.3
+
+- v1.0.1
+
+	- Now you can lock your device by pull down to spotlight view.
 
 ## License
 
